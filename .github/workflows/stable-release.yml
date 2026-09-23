@@ -51,7 +51,7 @@ jobs:
       - name: Get version
         id: version
         run: |
-          VERSION=$(grep 'versionName =' app/build.gradle.kts | head -1 | sed 's/.*"\(.*\)".*/\1/')
+          VERSION=$(grep '^versionName = ' gradle/libs.versions.toml | cut -d '"' -f2)
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
  
       - name: Create Stable Release

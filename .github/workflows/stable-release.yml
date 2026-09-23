@@ -37,7 +37,7 @@ jobs:
           cache-encryption-key: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
  
       - name: Build Stable APK
-        run: ./gradlew assembleStableRelease androidSourcesJar makeJar
+        run: ./gradlew assembleStableRelease
         env:
           CLOUDX_KEYSTORE_PATH: ${{ runner.temp }}/cloudx-release.jks
           CLOUDX_KEYSTORE_PASSWORD: ${{ secrets.CLOUDX_KEYSTORE_PASSWORD }}

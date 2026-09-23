@@ -1521,7 +1521,15 @@ class CS3IPlayer : IPlayer {
                             }
 
                             Player.STATE_ENDED -> {
-                                event(VideoEndedEvent())
+                              if (
+                                  exoPlayer?.isCurrentMediaItemDynamic==true){
+                                  exoPlayer?.seekToDefaultPosition()
+                                  exoPlayer?.prepare()
+                                  exoPlayer?.play()
+                              } else {
+                                  event(VideoEndedEvent())
+                              }
+                              )
                             }
 
                             Player.STATE_BUFFERING -> {

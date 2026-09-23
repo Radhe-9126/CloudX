@@ -96,6 +96,16 @@ android {
                 keyPassword = System.getenv("SIGNING_KEY_PASSWORD")
             }
         }
+        if (System.getenv("CLOUDX_KEY_ALIAS") != null) {
+        create("stable") {
+        val keystorePath = System.getenv("CLOUDX_KEYSTORE_PATH")
+ 
+        storeFile = file(keystorePath)
+        storePassword = System.getenv("CLOUDX_KEYSTORE_PASSWORD")
+        keyAlias = System.getenv("CLOUDX_KEY_ALIAS")
+        keyPassword = System.getenv("CLOUDX_KEY_PASSWORD")
+            }
+        }
     }
 
     compileSdk = libs.versions.compileSdk.get().toInt()
@@ -163,8 +173,14 @@ android {
     flavorDimensions.add("state")
     productFlavors {
         create("stable") {
-            dimension = "state"
-        }
+        dimension = "state"
+ 
+        if (signingConfigs.names.contains("stable")) {
+        signingConfig = signingConfigs.getByName("stable")
+        } else {
+        logger.warn("No stable signing config!")
+    }
+}
         create("prerelease") {
             dimension = "state"
             applicationIdSuffix = ".prerelease"

@@ -277,6 +277,7 @@
         <item>Lavender</item>
         <item>Material You</item>
         <item>Material You (Secondary)</item>
+        <item>Nuvio Red</item>
     </string-array>
     <string-array name="themes_overlay_names_values">
         <item>Normal</item>
@@ -301,6 +302,7 @@
         <item>Lavender</item>
         <item>Monet</item>
         <item>Monet2</item>
+        <item>Nuvio</item>
     </string-array>
 
     <string-array name="themes_names">
@@ -313,6 +315,7 @@
         <item>Dracula</item>
         <item>Lavender Dreams</item>
         <item>Silent Blue</item>
+        <item>Nuvio</item>
     </string-array>
     <string-array name="themes_names_values">
         <item>AmoledLight</item>
@@ -324,6 +327,7 @@
         <item>Dracula</item>
         <item>Lavender</item>
         <item>SilentBlue</item>
+        <item>Nuvio</item>
     </string-array>
 
     <string-array name="extension_statuses">

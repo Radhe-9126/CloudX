@@ -208,6 +208,18 @@
         <item name="colorOnPrimary">@color/SilentBlueTextColor</item>
     </style>
 
+    <style name="NuvioMode">
+        <item name="primaryGrayBackground">@color/NuvioPrimaryGrayBackground</item>
+        <item name="primaryBlackBackground">@color/NuvioBitDarkerGrayBackground</item>
+        <item name="iconGrayBackground">@color/NuvioGrayBackground</item>
+        <item name="boxItemBackground">@color/NuvioItemBackground</item>
+        <item name="textColor">@color/NuvioTextColor</item>
+        <item name="iconColor">@color/NuvioIconColor</item>
+        <item name="white">@color/NuvioTextColor</item>
+        <item name="black">@color/NuvioPrimaryGrayBackground</item>
+        <item name="colorOnPrimary">@color/NuvioTextColor</item>
+    </style>
+
     <style name="LavenderMode">
         <item name="primaryGrayBackground">@color/LavenderPrimaryGrayBackground</item>
         <item name="primaryBlackBackground">@color/LavenderBitDarkerGrayBackground</item>
@@ -446,6 +458,15 @@
         <item name="colorOnPrimary">@color/whiteText</item>
         <!--    Needed for leanback fuckery    -->
         <item name="android:colorAccent">@color/colorPrimaryLavender</item>
+    </style>
+
+    <style name="OverlayPrimaryColorNuvio">
+        <item name="colorPrimary">@color/colorPrimaryNuvio</item>
+        <item name="android:colorPrimary">@color/colorPrimaryNuvio</item>
+        <item name="colorPrimaryDark">#B80710</item>
+        <item name="colorAccent">#F40612</item>
+        <item name="colorOnPrimary">@color/whiteText</item>
+        <item name="android:colorAccent">@color/colorPrimaryNuvio</item>
     </style>
 
     <style name="customRatingBar" parent="@style/Widget.AppCompat.RatingBar">

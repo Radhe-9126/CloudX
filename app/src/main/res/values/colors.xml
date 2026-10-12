@@ -96,6 +96,15 @@
     <color name="SilentBlueGrayTextColor">#7B83B0</color>
     <color name="SilentBlueIconColor">#7B83B0</color>
 
+    <!--Nuvio Theme-->
+    <color name="NuvioPrimaryGrayBackground">#141414</color>
+    <color name="NuvioBitDarkerGrayBackground">#000000</color>
+    <color name="NuvioGrayBackground">#181818</color>
+    <color name="NuvioItemBackground">#181818</color>
+    <color name="NuvioTextColor">#FFFFFF</color>
+    <color name="NuvioGrayTextColor">#B3B3B3</color>
+    <color name="NuvioIconColor">#FFFFFF</color>
+
     <!--Other Colors -->
     <color name="colorPrimaryBlue">#5664B7</color>
     <color name="colorPrimaryRed">#D50000</color>
@@ -117,6 +126,7 @@
     <color name="colorPrimaryDandelionYellow">#F5BB00</color>
     <color name="colorPrimaryCoolBlue">#408cac</color>
     <color name="colorPrimaryLavender">#6F55AF</color>
+    <color name="colorPrimaryNuvio">#E50914</color>
 
     <color name="colorTestPass">#48E484</color>
     <color name="colorTestFail">#ea596e</color>
